@@ -19,6 +19,17 @@ public class DataPegawai {
   InputStreamReader isr = new InputStreamReader(System.in);
   BufferedReader input = new BufferedReader(isr);
   try{
+      System.out.println("Aplikasi Data Karyawan");
+            ArrayList no_karyawan = new ArrayList();
+            ArrayList nama = new ArrayList();
+            ArrayList alamat = new ArrayList();
+            ArrayList jenis_kelamin = new ArrayList();
+            ArrayList posisi = new ArrayList();
+            ArrayList aktif = new ArrayList();
+            ArrayList gaji_bersih = new ArrayList();
+            int total =0 ;
+            int lagi;
+            int pilih;
     do{
      System.out.println("*=========================================*");
      System.out.println("+ Pilih Pilihan Mu +");
@@ -76,11 +87,12 @@ public class DataPegawai {
        System.out.println("Aktif : "+aktif.get(i));
        System.out.println("Gaji : "+gaji_bersih.get(i));
       }
-      System.out.println("================ ======================================"); 
-      System.out.println("1. Menu Awal 0. Keluar"); 
-      System.out.println("================ ======================================"); 
+      
       break ;
  } 
+ System.out.println("================ ======================================"); 
+      System.out.println("1. Menu Awal 0. Keluar"); 
+      System.out.println("================ ======================================"); 
  System.out.print("Pilih : ");
  pilih = Integer.parseInt(input.readLine());
  }while(pilih == 1);
